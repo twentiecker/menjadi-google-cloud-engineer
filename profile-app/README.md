@@ -21,7 +21,7 @@
 # tambah role Storage Object Admin
 
 1. Ketik iam di search bar, pilih iam (iam & admin)
-2. Pada kolom principal cari nama akun yang mirip seperti nama bucket ((hip-graph-465112-d1)
+2. Pada kolom principal cari nama akun yang mirip seperti nama bucket (hip-graph-465112-d1)
 3. Pilih icon pencil di ujung kanan
 4. Pilih add another role
 5. Ketik Storage Object Admin pada kotak filter, pilih Storage Object Admin
