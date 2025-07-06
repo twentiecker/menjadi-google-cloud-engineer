@@ -1,3 +1,8 @@
+# struktur project
+
+1. folder images berisi asset yang akan diupload ke dalam bucket
+2. folder profile-app beris file app.yaml, index.html, dan style.css yang akan di deploy ke app engine
+
 # membuat app engine
 
 1. buka consol GCP
@@ -31,6 +36,6 @@
 
 1. Buka cloud shell terminal GCP
 2. Lakukan clone: git clone https://github.com/twentiecker/menjadi-google-cloud-engineer.git
-3. Masuk ke folder profile app: cd menjadi-google-cloud-engineer/profile-app
+3. Masuk ke folder profile-app: cd menjadi-google-cloud-engineer/profile-app
 4. Deploy ke app engine: gcloud app deploy
 5. Dapatkan link dan buka website hasil deploy: gcloud app browse
