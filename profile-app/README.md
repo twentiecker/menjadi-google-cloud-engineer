@@ -16,12 +16,12 @@
 
 1. download semua file yang ada di folder images
 2. ketik bucket di search bar, pilih buckets (cloud storage)
-3. pilih salah satu bucket yang tersedia (hip-graph-465112-d1.appspot.com) atau create bucket lagi.
+3. pilih bucket yang sudah tersedia role di iam (hip-graph-465112-d1.appspot.com).
 4. setelah masuk ke bucketnya, pilih menu upload > upload files dan pilih semua file yang sudah didownload dari folder images sbelumnya
 5. untuk masing2 file yang berhasil diupload di bucket, pilih titik tiga di ujung kanan, pilih edit access, pilih add entry
 6. pada dropdown entity baru pilih public, kemudian save.
-7. Lakukan edit access untuk semua file yang ada di bucket
-8. Setelah semua sudah dibuat public, pilih titik tiga di ujung kanan, pilih copy public url, kemudian masukkan dalam file inde.html untuk setiap image yang bersesuaian
+7. lakukan edit access untuk semua file yang ada di bucket
+8. setelah semua sudah dibuat public, pilih titik tiga di ujung kanan, pilih copy public url, kemudian masukkan dalam file inde.html untuk setiap image yang bersesuaian
 
 # tambah role Storage Object Admin
 
