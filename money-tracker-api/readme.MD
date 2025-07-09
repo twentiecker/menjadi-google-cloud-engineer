@@ -2,7 +2,7 @@
 
 1. ketik service account di search bar, pilih service accounts (iam & admin)
 2. pilih create service account, beri nama bebas dan id akan menyesuaikan by default, create and continue
-3. berikan role Storage Object Admin, kemudian pilih continue
+3. berikan role Editor, kemudian pilih continue
 4. pilih done
 5. pilih nama service account yang sudah dibuat
 6. pilih tab keys
@@ -79,4 +79,4 @@
 2. Lakukan clone: git clone https://github.com/twentiecker/menjadi-google-cloud-engineer.git
 3. Masuk ke folder profile-app: cd menjadi-google-cloud-engineer/money-tracker-api
 4. Deploy ke app engine: gcloud app deploy
-5. Dapatkan link dan buka website hasil deploy: gcloud app browse
+5. Dapatkan link dan copy url hasil deploy: gcloud app browse -s <nama_service>
