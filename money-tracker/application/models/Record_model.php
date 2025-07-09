@@ -55,7 +55,7 @@ class Record_model extends CI_Model {
             $amount = $amount * -1;
         }
 
-        $files;
+        $files = null;
         if ($_FILES['attachment']['tmp_name'] !== "") {
             $files = fopen($_FILES['attachment']['tmp_name'], 'r');
         }
