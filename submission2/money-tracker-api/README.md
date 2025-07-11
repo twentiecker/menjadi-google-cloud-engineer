@@ -11,6 +11,13 @@
 9. Klik Create → File akan otomatis diunduh
 10. buka file yang berhasil diunduh, copy isinya dan paste di berkas serviceaccountkey.json
 
+# Memberi Hak Akses ke Reviewer
+
+1. ketik iam di search bar, pilih iam (iam & admin)
+2. pilih grant access
+3. masukkan nama akun reviewer pada new principals
+4. assign role berikut ini: App Engine Viewer, Cloud SQL Viewer, Logs Viewer, Storage Bucket Viewer, Storage Object Viewer, dan Storage Transfer Viewer
+
 # membuat bucket
 
 1. ketik bucket di search bar, pilih buckets (cloud storage)
@@ -19,6 +26,16 @@
 4. pilih region asia-southeast2 (jakarta), kemudian continue
 5. biarkan default, kemudian pilih continue
 6. uncheck "Enforce public access prevention on this bucket", pilih fine-grained, kemudian continue
+7. pilih create
+
+# Menerapkan Lifecycle Management pada Cloud Storage
+
+1. ketik bucket di search bar, pilih buckets (cloud storage)
+2. pilih tab Lifecycle
+3. pilih add rule
+4. pada select an action, pilih delete object, kemudian continue
+5. pilih age dan isi 30
+6. pilih number of newer versions dan isi 5, kemudian continue
 7. pilih create
 
 # menyalin project id dan nama bucket
@@ -73,10 +90,15 @@
 4. pilih service account yang sudah dibuat sebelumnya (bukan default service account)
 5. pilih next
 
-# deploy aplikas backend ke app engine
+# deploy aplikasi backend ke app engine dengan service "backend"
+
+untuk membuat service tertentu, dalam hal ini "backend", pertama kita harus buat kondisi service "default" dulu dengan cara melakukan comment pada baris kode "service: backend", setelah itu baru bisa buat service lainnya sesuai dengan kebutuhan.
 
 1. Buka cloud shell terminal GCP
 2. Lakukan clone: git clone https://github.com/twentiecker/menjadi-google-cloud-engineer.git
-3. Masuk ke folder profile-app: cd menjadi-google-cloud-engineer/money-tracker-api
+3. Masuk ke folder profile-app: cd menjadi-google-cloud-engineer/submission2/money-tracker-api
 4. Deploy ke app engine: gcloud app deploy
-5. Dapatkan link dan copy url hasil deploy: gcloud app browse -s <nama_service>
+5. Dapatkan link dan copy url hasil deploy: gcloud app browse
+6. buka app.yaml hapus tanda "#" pada baris kode "service: backend"
+7. Deploy ke app engine: gcloud app deploy
+8. Dapatkan link dan copy url hasil deploy: gcloud app browse -s <nama_service>
